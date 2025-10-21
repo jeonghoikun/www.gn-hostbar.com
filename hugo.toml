@@ -1,0 +1,56 @@
+baseURL = 'https://www.gangnam-gugudan.com/' ## Change
+languageCode = 'ko-KR'
+title = '강남 구구단 쩜오: Gugudan' ## Change
+
+[params]
+  description = '강남 구구단 쩜오 공식홈페이지. 강남 구구단 쩜오에서 강남의 화려한 밤을 경험하세요. 세련된 공간과 다채로운 즐길 거리로 특별한 시간을 보낼 수 있는 이곳에서 새로운 추억을 만들어 보세요.' ## Change
+  author = '진우'
+  datePublished = "2024-12-13T00:00:00+09:00" ## Change
+  dateModified = "2025-10-20T00:00:00+09:00" ## Change
+  [params.store]
+  tel = "010-2170-4981" ## Change
+  location = "강남" ## Change
+  locationEn = "Gangnam" ## Change
+  name = "구구단" ## Change
+  nameEn = "Gugudan" ## Change
+  category = "쩜오" ## Change
+  categoryEn = "Dot5" ## Change
+  address = "서울시 강남구 논현동 248-7" ## Change
+  googleMapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.741047626004!2d127.03369181564705!3d37.51402523489071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f415b07255%3A0x2162a0d614d3c110!2s640%20Eonju-ro%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1678605759071!5m2!1sen!2skr" ## Change
+	[params.store.social.kakaoTalk]
+	  id = "" ## Change
+	  link = "" ## Change
+	[params.store.social.telegram]
+      id = "Jsss1122" ## Change
+      link = "https://t.me/Jsss1122" ## Change
+
+
+
+# to generate robots.txt file. /static/robots.txt used if set to false
+enableRobotsTXT = false
+# to clean the destination directory before building the site
+cleanDestinationDir = true
+
+# for PostCSS and TailwindCSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# deployment settings for Github Pages
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<meta name="author" content="{{.Site.Params.Author}}">
+	<title>{{.Page.Title}}</title>
+	<meta name="description" content="{{.Site.Params.Description}}">
+	<link rel="canonical" href="{{.Permalink}}">
+
+	<meta name="twitter:title" content="{{.Site.Title}}">
+	<meta name="twitter:description" content="{{.Site.Params.Description}}">
+	<meta name="twitter:url" content="{{.Permalink}}">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="{{.Permalink}}/thumbnail.png">
+
+	<meta property="og:title" content="{{.Site.Title}}">
+	<meta property="og:description" content="{{.Site.Params.Description}}">
+	<meta property="og:url" content="{{.Permalink}}">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="{{.Permalink}}/thumbnail.png">
+
+	<meta itemprop="name" content="{{.Site.Title}}">
+	<meta itemprop="description" content="{{.Site.Params.Description}}">
+	<meta itemprop="datePublished" content="{{ .Site.Params.DatePublished }}">
+	<meta itemprop="dateModified" content="{{ .Site.Params.DateModified }}">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org/",
+		"@type": "WebSite",
+		"name": {{ .Site.Title }},
+		"url": {{ .Permalink }}
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "LocalBusiness",
+		"name": {{ .Site.Title }},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "서울 강남구",
+			"addressCountry": "KR"
+		},
+		"telephone": {{ .Site.Params.Store.Tel }},
+		"url": {{ .Permalink }}
+	}
+	</script>
+
+	<link rel="preconnect" href="https://rsms.me/">
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+	{{ with (templates.Defer (dict "key" "global")) }}
+		{{ partial "css.html" . }}
+	{{ end }}
+</head>
+<body class="antialiased bg-black text-gray-300">
+	{{ partial "menu" . }}
+	{{ partial "header" . }}
+	{{ block "main" . }}{{ end }}
+	{{ partial "footer" . }}
+</body>
+</html>
