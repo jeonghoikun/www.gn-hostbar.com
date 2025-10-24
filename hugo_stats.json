@@ -105,7 +105,9 @@
       "lg:mx-0",
       "lg:space-x-1",
       "max-w-[300px]",
+      "mb-3",
       "md:grid-cols-3",
+      "min-w-[250px]",
       "mt-10",
       "mt-20",
       "mt-4",
@@ -193,8 +195,9 @@
       "icon-menu-x",
       "menu-body",
       "menu-header",
+      "nav-about",
       "nav-home",
-      "nav-newworld-solution"
+      "nav-search"
     ]
   }
 }

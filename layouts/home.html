@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-	<section class="mt-20">
+	<section id="nav-about" class="mt-20">
 		<div class="container mx-auto px-5">
 			<div class="space-y-6">
 				<div class="h-[1px] bg-gradient-to-r from-[#00bb55] via-[#00bb55]/70 to-black _section_bar" style="width: 0px;"></div>
@@ -51,56 +51,55 @@
 		}
 		</script>
 	</section>
-	<section id="nav-newworld-solution" class="mt-20 bg-gradient-to-r from-gray-900/50 to-black py-10">
+	<section id="nav-search" class="mt-20 bg-gradient-to-r from-gray-900/50 to-black py-10">
 		<div class="container mx-auto px-5">
 			<div class="space-y-6">
 				<div class="h-[1px] bg-gradient-to-r from-[#00bb55] via-[#00bb55]/70 to-black _section_bar" style="width: 0px;"></div>
 				<h2 class="text-lg sm:text-2xl italic font-bold text-[#00bb55] [text-shadow:_1px_1px_20px_rgba(0,187,85,0.8)]" style="opacity: 0;">{{ .Site.Params.Store.Name }} 정보</h2>
 			</div>
 			<div class="mt-8 space-y-3">
-				<h3 class="text-2xl sm:text-4xl font-extrabold text-white">{{ .Site.Params.Store.Name }}. 직관적으로, 빠르게 탐색</h3>
+				<h3 class="text-2xl sm:text-4xl font-extrabold text-white">{{ .Site.Params.Store.Name }}. 직관적으로 빠르게 탐색</h3>
 				<article class="text-sm sm:text-base text-gray-200 space-y-2">
-					<span class="font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-[#00bb55] text-transparent bg-clip-text animate-gradient">그라디언트</span>
-					<span class="text-[#00bb55] font-bold [text-shadow:_1px_1px_20px_rgba(0,187,85,0.8)]">그린 쉐도우</span>
+					<p><span class="font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-[#00bb55] text-transparent bg-clip-text animate-gradient">{{ .Site.Params.Store.Location }} {{ .Site.Params.Store.Name  }} {{ .Site.Params.Store.Category }}</span>의 궁금한 정보를 빠르게 탐색 할 수 있어요. 그 외 자세한 문의는 전화상담을 통해 친절히 안내 받으실 수 있어요!</p>
 				</article>
 			</div>
 		</div>
 		<div class="container mx-auto px-5 mt-6 space-y-6 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-			<div class="bg-gray-900 hover:bg-gray-800 duration-300 rounded-lg p-5 relative">
-				<div>Icon</div>
-				<div data-target="#nav-ncs" onclick="handleNavButtonClick(event)">
+			<div class="bg-gray-900 hover:bg-gray-800 rounded-lg p-5 relative">
+				{{ partial "icon/gift" "w-8 text-[#00bb55] mb-3" }}
+				<div data-target="#nav-event" onclick="handleNavButtonClick(event)">
 					{{ partial "icon/arrow-up-right" "w-8 text-gray-600 absolute top-5 right-5 cursor-pointer hover:text-gray-400 duration-300" }}
 				</div>
-				<h3 class="text-gray-100 font-bold text-lg">카지노솔루션</h3>
+				<h3 class="text-gray-100 font-bold text-lg">이벤트</h3>
 				<div class="h-[1px] w-full bg-gray-500/50 my-2"></div>
-				<p class="text-sm text-gray-200">카지노솔루션은 최상위 게이밍 제공업체의 게임을 통합하여 하나의 완전한 웹사이트로 제공하는 소프트웨어 제작, 임대, 분양 솔루션입니다.</p>
+				<p class="text-sm text-gray-200">{{ .Site.Params.Store.Name }} {{ .Site.Params.Store.Category }}의 다양한 무료, 할인 이벤트 정보를 확인해보세요! 예약을 통해 더욱 알찬 혜택을 누리실 수 있어요.</p>
 			</div>
-			<div class="bg-gray-900 hover:bg-gray-800 duration-300 rounded-lg p-5 relative">
-				<div>Icon</div>
-				<div data-target="#nav-nce" onclick="handleNavButtonClick(event)">
+			<div class="bg-gray-900 hover:bg-gray-800 rounded-lg p-5 relative">
+				{{ partial "icon/clock" "w-8 text-[#00bb55] mb-3" }}
+				<div data-target="#nav-hours" onclick="handleNavButtonClick(event)">
 					{{ partial "icon/arrow-up-right" "w-8 text-gray-600 absolute top-5 right-5 cursor-pointer hover:text-gray-400 duration-300" }}
 				</div>
-				<h3 class="text-gray-100 font-bold text-lg">정품 카지노알</h3>
+				<h3 class="text-gray-100 font-bold text-lg">영업 시간</h3>
 				<div class="h-[1px] w-full bg-gray-500/50 my-2"></div>
-				<p class="text-sm text-gray-200">정품 카지노알은 신세계솔루션에서 제공하는 카지노 게임 크레딧으로, 안전하고 신뢰할 수 있는 게임 환경을 제공합니다.</p>
+				<p class="text-sm text-gray-200">{{ .Site.Params.Store.Name }} {{ .Site.Params.Store.Category }}의 영업 시간 정보를 확인해보세요! 편리한 시간에 방문하실 수 있도록 안내해드려요.</p>
 			</div>
-			<div class="bg-gray-900 hover:bg-gray-800 duration-300 rounded-lg p-5 relative">
-				<div>Icon</div>
-				<div data-target="#nav-nca" onclick="handleNavButtonClick(event)">
+			<div class="bg-gray-900 hover:bg-gray-800 rounded-lg p-5 relative">
+				{{ partial "icon/dollar" "w-8 text-[#00bb55] mb-3" }}
+				<div data-target="#nav-price" onclick="handleNavButtonClick(event)">
 					{{ partial "icon/arrow-up-right" "w-8 text-gray-600 absolute top-5 right-5 cursor-pointer hover:text-gray-400 duration-300" }}
 				</div>
-				<h3 class="text-gray-100 font-bold text-lg">카지노api</h3>
+				<h3 class="text-gray-100 font-bold text-lg">인당 가격</h3>
 				<div class="h-[1px] w-full bg-gray-500/50 my-2"></div>
-				<p class="text-sm text-gray-200">카지노api는 개발자가 신세계솔루션의 카지노 게임과 기능을 자신의 애플리케이션이나 웹사이트에 통합할 수 있도록 하는 강력한 도구입니다.</p>
+				<p class="text-sm text-gray-200">{{ .Site.Params.Store.Name }} {{ .Site.Params.Store.Category }}의 인당 가격 정보를 확인 하신 후 합리적인 정찰제 가격으로 최고의 서비스를 이용하세요.</p>
 			</div>
-			<div class="bg-gray-900 hover:bg-gray-800 duration-300 rounded-lg p-5 relative">
-				<div>Icon</div>
-				<div data-target="#nav-nts" onclick="handleNavButtonClick(event)">
+			<div class="bg-gray-900 hover:bg-gray-800 rounded-lg p-5 relative">
+				{{ partial "icon/map" "w-8 text-[#00bb55] mb-3" }}
+				<div data-target="#nav-map" onclick="handleNavButtonClick(event)">
 					{{ partial "icon/arrow-up-right" "w-8 text-gray-600 absolute top-5 right-5 cursor-pointer hover:text-gray-400 duration-300" }}
 				</div>
-				<h3 class="text-gray-100 font-bold text-lg">테더솔루션</h3>
+				<h3 class="text-gray-100 font-bold text-lg">오시는 길</h3>
 				<div class="h-[1px] w-full bg-gray-500/50 my-2"></div>
-				<p class="text-sm text-gray-200">테더솔루션은 신세계솔루션에서 제공하는 안정적이고 효율적인 테더 입출금 솔루션으로, 사용자에게 안전하고 원활한 거래 경험을 제공합니다.</p>
+				<p class="text-sm text-gray-200">{{ .Site.Params.Store.Name }} {{ .Site.Params.Store.Category }}의 위치와 주소를 확인할 수 있어요. 편리한 교통편 안내로 쉽게 찾아오실 수 있어요.</p>
 			</div>
 		</div>
 	</section>

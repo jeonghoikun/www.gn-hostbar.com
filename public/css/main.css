@@ -270,6 +270,9 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .block {
     display: block;
   }
@@ -317,6 +320,12 @@
   }
   .max-w-\[300px\] {
     max-width: 300px;
+  }
+  .min-w-\[200px\] {
+    min-width: 200px;
+  }
+  .min-w-\[250px\] {
+    min-width: 250px;
   }
   .cursor-not-allowed {
     cursor: not-allowed;

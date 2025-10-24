@@ -8,17 +8,16 @@
 			{{ partial "icon/x" "w-5 sm:w-6" }}
 		</div>
 	</div>
-	<div id="menu-body" class="mt-10 pt-3 pb-10 px-5" hidden>
+	<div id="menu-body" class="mt-10 pt-3 pb-10 px-5 min-w-[250px]" hidden>
 		<nav class="text-white sm:text-lg font-semibold space-y-3">
 			<button type="button" data-target="header" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">홈</button>
-			<button type="button" data-target="#nav-newworld-solution" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">신세계솔루션</button>
-			<button type="button" data-target="#nav-solution-price" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">서비스 비용</button>
-			<button type="button" data-target="#nav-nss" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">nss: 신세계 보안서버 소개</button>
-			<button type="button" data-target="#nav-ncs" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">ncs: 신세계 카지노솔루션 소개</button>
-			<button type="button" data-target="#nav-nca" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">nca: 신세계 카지노api 소개</button>
-			<button type="button" data-target="#nav-nce" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">nce: 신세계 정품 카지노알 소개</button>
-			<button type="button" data-target="#nav-nts" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">nts: 신세계 테더솔루션 소개</button>
-			<button type="button" data-target="#nav-cs" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">신세계솔루션 고객센터 안내</button>
+			<button type="button" data-target="#nav-about" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Name }} 소개</button>
+			<button type="button" data-target="#nav-search" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Name }} 정보 탐색</button>
+			<button type="button" data-target="#nav-event" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">할인 & 무료 이벤트</button>
+			<button type="button" data-target="#nav-hours" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">영업 시간</button>
+			<button type="button" data-target="#nav-price" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">인당 가격</button>
+			<button type="button" data-target="#nav-map" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">오시는 길</button>
+			<button type="button" data-target="#nav-cs" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Name }} 예약문의</button>
 			<div class="mt-10 space-y-3">
 				<a class="block w-full text-right border-b-1 border-white/0 hover:border-white flex items-center justify-end space-x-2 opacity-50 cursor-not-allowed">
 					<img class="w-7" src="/national_flag/USA.png" alt="usa">
