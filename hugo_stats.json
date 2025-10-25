@@ -118,10 +118,8 @@
       "lg:gap-y-3",
       "lg:grid",
       "lg:grid-cols-2",
-      "lg:grid-cols-3",
       "lg:grid-cols-4",
       "lg:grid-cols-5",
-      "lg:grid-cols-6",
       "lg:justify-center",
       "lg:mx-0",
       "lg:space-x-1",
@@ -190,11 +188,9 @@
       "text-gray-300",
       "text-gray-400",
       "text-gray-600",
-      "text-green-300",
       "text-green-400",
       "text-lg",
       "text-red-300",
-      "text-red-500",
       "text-right",
       "text-sm",
       "text-transparent",
@@ -231,7 +227,6 @@
       "nav-event",
       "nav-home",
       "nav-hours",
-      "nav-nss",
       "nav-search"
     ]
   }

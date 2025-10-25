@@ -712,17 +712,11 @@
   .text-gray-600 {
     color: var(--color-gray-600);
   }
-  .text-green-300 {
-    color: var(--color-green-300);
-  }
   .text-green-400 {
     color: var(--color-green-400);
   }
   .text-red-300 {
     color: var(--color-red-300);
-  }
-  .text-red-500 {
-    color: var(--color-red-500);
   }
   .text-transparent {
     color: transparent;
@@ -911,11 +905,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .lg\:grid-cols-3 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -924,11 +913,6 @@
   .lg\:grid-cols-5 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-cols-6 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
   .lg\:justify-center {
