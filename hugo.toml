@@ -24,8 +24,6 @@ title = '강남 구구단 쩜오: Gugudan' ## Change
       id = "Jsss1122" ## Change
       link = "https://t.me/Jsss1122" ## Change
 
-
-
 # to generate robots.txt file. /static/robots.txt used if set to false
 enableRobotsTXT = false
 # to clean the destination directory before building the site
