@@ -11,6 +11,7 @@
       "h2",
       "h3",
       "h4",
+      "h5",
       "head",
       "header",
       "html",
@@ -87,6 +88,7 @@
       "gap-2",
       "gap-6",
       "grid",
+      "grid-cols-1",
       "grid-cols-2",
       "h-[100px]",
       "h-[150px]",
@@ -165,6 +167,7 @@
       "sm:h-[200px]",
       "sm:space-y-0",
       "sm:text-2xl",
+      "sm:text-3xl",
       "sm:text-4xl",
       "sm:text-base",
       "sm:text-lg",
@@ -177,6 +180,7 @@
       "space-y-3",
       "space-y-4",
       "space-y-6",
+      "space-y-8",
       "text-2xl",
       "text-3xl",
       "text-4xl",
@@ -196,6 +200,7 @@
       "text-sm",
       "text-transparent",
       "text-white",
+      "text-xl",
       "text-yellow-500",
       "to-[#00bb55]",
       "to-black",
@@ -229,6 +234,7 @@
       "nav-event",
       "nav-home",
       "nav-hours",
+      "nav-price",
       "nav-search"
     ]
   }
