@@ -9,5 +9,7 @@
 7. change /assets/carousel/girls, /assets/carousel/rooms
 8. edit /data
 9. edit /layout/_partials/home_article.html
-10. set dns of aws route53
-11. deploy to github pages and aws
+10. download verification file of google search console and place it in /static
+11. set dns of aws route53
+12. deploy to github pages and aws
+13. register to google search console
