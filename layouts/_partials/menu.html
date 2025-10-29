@@ -11,13 +11,13 @@
 	<div id="menu-body" class="mt-10 pt-3 pb-10 px-5 min-w-[250px]" hidden>
 		<nav class="text-white sm:text-lg font-semibold space-y-3">
 			<button type="button" data-target="header" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">홈</button>
-			<button type="button" data-target="#nav-about" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Name }} 소개</button>
-			<button type="button" data-target="#nav-search" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Name }} 정보 탐색</button>
+			<button type="button" data-target="#nav-about" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Location }} {{ .Site.Params.Store.Category }} 소개</button>
+			<button type="button" data-target="#nav-search" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Category }} 정보 탐색</button>
 			<button type="button" data-target="#nav-event" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">할인 & 무료 이벤트</button>
 			<button type="button" data-target="#nav-hours" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">영업 시간</button>
 			<button type="button" data-target="#nav-price" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">인원수별 가격</button>
 			<button type="button" data-target="#nav-map" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">오시는 길</button>
-			<button type="button" data-target="#nav-cs" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Name }} 예약문의</button>
+			<button type="button" data-target="#nav-cs" class="block w-full text-right border-b-1 border-white/0 hover:border-white cursor-pointer" onclick="handleNavButtonClick(event)">{{ .Site.Params.Store.Category }} 예약문의</button>
 			<div class="mt-10 space-y-3">
 				<a class="block w-full text-right border-b-1 border-white/0 hover:border-white flex items-center justify-end space-x-2 opacity-50 cursor-not-allowed">
 					<img class="w-7" src="/national_flag/USA.png" alt="usa">

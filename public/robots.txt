@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.gangnam-siren.com/sitemap.txt
+Sitemap: https://www.gangnamsing.com/sitemap.txt
