@@ -1,15 +1,15 @@
 [base.whisky1]
   has = true
   name = '1부 주대'
-  price = 170000
+  price = 0
 [base.whisky2]
   has = true
   name = '2부 주대'
-  price = 150000
+  price = 0
 [base.tc]
   has = true
   name = "TC"
-  price = 120000
+  price = 0
 [base.rt]
   has = true
   name = "RT"

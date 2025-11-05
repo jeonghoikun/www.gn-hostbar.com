@@ -1,28 +1,28 @@
-baseURL = 'https://www.gangnamsing.com/' ## Change
+baseURL = 'https://www.gn-hostbar.com/' ## Change
 languageCode = 'ko-KR'
-title = '강남 노래방 초이스: CHOICE' ## Change
+title = '강남 호빠 플러팅 공식홈페이지' ## Change
 
 [params]
-  description = '강남 노래방 초이스는 세련된 분위기와 품격 있는 서비스로 특별한 밤을 즐기고 싶은 분들에게 인기를 얻고 있는 공간입니다. 트렌디한 인테리어와 고급스러운 조명, 그리고 다양한 선택의 즐거움을 제공하는 강남 노래방 초이스는 단순한 노래방 이상의 만족을 선사합니다. 감각적인 무드 속에서 완벽한 시간을 보내고 싶은 분들에게 이상적인 장소입니다.' ## Change
+  description = '강남 호빠 플러팅 공식홈페이지에 방문 해주셔서 감사합니다. 세련된 분위기와 함께 품격 있는 서비스를 경험할 수 있는 공간으로, 일상에서 벗어나 특별한 시간을 보내고 싶은 분들께 추천드릴 만한 곳입니다. 최신 트렌드와 감각적인 인테리어로 꾸며진 이곳은 방문하는 순간부터 남다른 분위기를 느끼실 수 있습니다. 강남 호빠 플러팅 공식홈페이지를 통해 예약과 이벤트 정보를 편리하게 확인하실 수 있습니다.' ## Change
   author = '진우'
-  datePublished = "2025-03-03T00:00:00+09:00" ## Change
-  dateModified = "2025-10-28T00:00:00+09:00" ## Change
+  datePublished = "2025-07-11T00:00:00+09:00" ## Change
+  dateModified = "2025-11-04T00:00:00+09:00" ## Change
   [params.store]
-  tel = "010-6590-7589" ## Change
+  tel = "010-8253-0760" ## Change
   location = "강남" ## Change
   locationEn = "Gangnam" ## Change
-  name = "초이스" ## Change
-  nameEn = "Choice" ## Change
-  category = "노래방" ## Change
-  categoryEn = "KTV" ## Change
-  address = "서울시 강남구 대치동 890-38" ## Change
-  googleMapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.150656732908!2d127.05328440000001!3d37.504364699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca41055280155%3A0xc6516a6b77ef70c1!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrjIDsuZjrj5kgODkwLTM4!5e0!3m2!1sko!2skr!4v1660489421580!5m2!1sko!2skr" ## Change
+  name = "플러팅" ## Change
+  nameEn = "Flirting" ## Change
+  category = "호빠" ## Change
+  categoryEn = "Hostbar" ## Change
+  address = "서울 강남구 역삼동 832-7" ## Change
+  googleMapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4846.994696276218!2d127.0266818958297!3d37.49541706063392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1502738de7b%3A0x65a8ee648278baf2!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kgODMyLTc!5e0!3m2!1sko!2skr!4v1731661981569!5m2!1sko!2skr" ## Change
 	[params.store.social.kakaoTalk]
 	  id = "" ## Change
 	  link = "" ## Change
 	[params.store.social.telegram]
-      id = "Jsss1122" ## Change
-      link = "https://t.me/Jsss1122" ## Change
+      id = "suyobi89" ## Change
+      link = "https://t.me/suyobi89" ## Change
 
 # to generate robots.txt file. /static/robots.txt used if set to false
 enableRobotsTXT = false
